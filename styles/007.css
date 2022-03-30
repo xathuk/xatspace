@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=Quicksand&display=swap');
-
 html {
     position: relative;
     min-height: 100%;
@@ -10,119 +9,6 @@ html {
 body {
     margin: 0 0 100px;
 }
-.page {
-    background-color: #23272a;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: #fff;
-    background-color: #17181f;
-    overflow-x: hidden;
-    user-select: none;
-}
-
-.name {
-    color: #fff;
-    font-family: 'Dosis', sans-serif;
-    font-size: 42px;
-    font-weight: 800;
-}
-
-.user-img {
-    margin-bottom: 2rem;
-    border-radius: 0.6rem;
-    overflow: hidden;
-    margin-left: auto;
-    margin-right: auto;
-    width: 16rem;
-}
-
-.pfp-flex {
-    display: flex;
-}
-
-.sub-text {
-    font-family: 'Dosis', sans-serif;
-    font-size: 20px;
-    color: #a8a8b8
-}
-
-/* */
-
-/* CARDS */
-.card2 {
-    border-radius: 0.6rem!important;
-    background-color: #242430;
-    padding: 1.25rem;
-    place-content: space-around;
-}
-
-.card {
-    border-radius: 0.6rem!important;
-    background-color: #242430;
-    transform: rotate(0deg);
-    transition: transform 0.2s ease-in-out;
-    padding: 1.25rem;
-    place-content: space-around;
-}
-
-.card-footer {
-    --tw-text-opacity: 1;
-    color: rgba(147, 197, 253, var(--tw-text-opacity));
-    margin-top: 0.5rem;
-}
-
-.card-desc {
-    --tw-text-opacity: 1;
-    color: rgba(156, 163, 175, var(--tw-text-opacity));
-    margin-top: 0.1rem;
-    padding-top: 0.20rem;
-    font-family: 'Dosis', sans-serif;
-    font-family: 'Quicksand', sans-serif;
-}
-
-.card:hover {
-    transform: rotate(2deg);
-    --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.card-img {
-    border-radius: 0.5rem;
-    width: 2.5rem;
-    height: 2.5rem;
-}
-
-.card-title {
-    font-weight: 700;
-    margin-left: 0.75rem;
-    margin-top: 0.5rem;
-    font-family: 'Dosis', sans-serif;
-    font-family: 'Quicksand', sans-serif;
-}
-
-.card-desc {
-    --tw-text-opacity: 1;
-    color: rgba(156, 163, 175, var(--tw-text-opacity));
-    margin-top: 0.1rem;
-    padding-top: 0.20rem;
-    font-family: 'Dosis', sans-serif;
-    font-family: 'Quicksand', sans-serif;
-}
-/* CARDS END */
-
-
-/* PFP-Responisve */
-@media only screen and (max-width: 873px) {
-    .pfp-flex {
-        display: unset;
-    }
-
-    .pfp {
-        padding: 1rem;
-        width: 100%;
-    }
-}
-
 
 .top-padding {
     padding-top: 7rem;
@@ -130,6 +16,13 @@ body {
 
 .text-margin {
     margin-left: 10%;
+}
+
+.name {
+    color: #fff;
+    font-family: 'Dosis', sans-serif;
+    font-size: 42px;
+    font-weight: 800;
 }
 
 .hight-light-text-gry {
@@ -146,6 +39,12 @@ body {
     font-weight: 800;
 }
 
+.sub-text {
+    font-family: 'Dosis', sans-serif;
+    font-size: 20px;
+    color: #a8a8b8
+}
+
 bold {
     font-weight: 600;
 }
@@ -156,9 +55,13 @@ white {
 }
 
 
-/* Fonts */
+/* fonts */
 .font-Roboto {
     font-family: 'Roboto', sans-serif;
+}
+
+.font-Lato {
+    font-family: 'Lato', sans-serif;
 }
 
 
@@ -198,6 +101,22 @@ header span {
     padding-right: 2rem;
 }
 
+.card {
+    border-radius: 0.6rem!important;
+    background-color: #242430;
+    transform: rotate(0deg);
+    transition: transform 0.2s ease-in-out;
+    padding: 1.25rem;
+    place-content: space-around;
+}
+.card2 {
+    border-radius: 0.6rem!important;
+    background-color: #242430;
+    padding: 1.25rem;
+    place-content: space-around;
+}
+
+
 /* Responisve */
 @media only screen and (max-width: 768px) {
     .list {
@@ -220,6 +139,13 @@ header span {
     }
 }
 
+@media only screen and (max-width: 415px) {
+    .card2 {
+        margin-right: 35px!important;
+        margin-left: 4px!important;
+    }
+}
+
 @media only screen and (max-width: 376px) {
     .card {
         --scale: calc(100% - 6%);
@@ -234,12 +160,86 @@ header span {
     }
 }
 
+
+/* Card content */
+.card:hover {
+    transform: rotate(2deg);
+    --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.card-img {
+    border-radius: 0.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.card-title {
+    font-weight: 700;
+    margin-left: 0.75rem;
+    margin-top: 0.5rem;
+    font-family: 'Dosis', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.card-desc {
+    --tw-text-opacity: 1;
+    color: rgba(156, 163, 175, var(--tw-text-opacity));
+    margin-top: 0.1rem;
+    padding-top: 0.20rem;
+    font-family: 'Dosis', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.card-url {
+    --tw-text-opacity: 1;
+    color: rgba(147, 197, 253, var(--tw-text-opacity));
+    margin-top: 0.5rem;
+}
+
+.page {
+    background-color: #23272a;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    background-color: #17181f;
+    overflow-x: hidden;
+    user-select: none;
+}
+
+.user-img {
+    margin-bottom: 1rem;
+    border-radius: 0.6rem;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    width: 16rem;
+}
+
 .pfp {
     cursor: default;
     width: 50%;
     float: right;
     overflow: hidden;
 }
+
+
+/* PFP-Responisve */
+.pfp-flex {
+    display: flex;
+}
+
+@media only screen and (max-width: 873px) {
+    .pfp-flex {
+        display: unset;
+    }
+
+    .pfp {
+        padding: 1rem;
+        width: 100%;
+    }
+}
+
 
 /* Scroll bar */
 ::-webkit-scrollbar {
